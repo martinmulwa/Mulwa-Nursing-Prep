@@ -1,5 +1,8 @@
+import { paper2_1 } from './paper2_1';
+
 export interface Question {
   num: number;
+  paper?: string;
   topic: string;
   text: string;
   options: string[];
@@ -9,9 +12,10 @@ export interface Question {
   memory?: string;
 }
 
-export const questions: Question[] = [
+const paper1Questions: Question[] = [
   {
     num: 1,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Which of the following cells undergoes meiosis:",
     options: ["Sperm cells", "Nerve cells", "Blood cells", "Muscle cells"],
@@ -21,6 +25,7 @@ export const questions: Question[] = [
   },
   {
     num: 2,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "In communication, the sender:",
     options: ["Codes the message", "Decodes the message", "Encodes the message", "Interprets the message"],
@@ -30,6 +35,7 @@ export const questions: Question[] = [
   },
   {
     num: 3,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Functions of a community include the following",
     options: [
@@ -44,6 +50,7 @@ export const questions: Question[] = [
   },
   {
     num: 4,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Select a true statement regarding food poisoning",
     options: [
@@ -58,6 +65,7 @@ export const questions: Question[] = [
   },
   {
     num: 5,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "The major goal of treating HIV infection with the ARVs is to",
     options: [
@@ -72,6 +80,7 @@ export const questions: Question[] = [
   },
   {
     num: 6,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The regulation of nursing practice in Kenya falls under which body",
     options: [
@@ -86,6 +95,7 @@ export const questions: Question[] = [
   },
   {
     num: 7,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Immunization with live or killed antigens is classified as",
     options: ["Innate immunity", "Passive immunity", "Active immunity", "Cell mediated"],
@@ -95,6 +105,7 @@ export const questions: Question[] = [
   },
   {
     num: 8,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "The part of a child’s stages that is measurable is",
     options: ["Learning", "Development", "Growth", "Cephalocaudal growth"],
@@ -104,6 +115,7 @@ export const questions: Question[] = [
   },
   {
     num: 9,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Calcium supplements in patients with osteoporosis should be given alongside the following nutrients",
     options: ["Vitamin C", "Phosphorous", "Vitamin D", "Vitamin B12"],
@@ -113,6 +125,7 @@ export const questions: Question[] = [
   },
   {
     num: 10,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "The appropriate intervention for children newly diagnosed with HIV and tuberculosis is to: -",
     options: [
@@ -127,6 +140,7 @@ export const questions: Question[] = [
   },
   {
     num: 11,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "The first line antibiotic for prophylaxis against opportunistic infections in HIV/AIDS is",
     options: [
@@ -141,6 +155,7 @@ export const questions: Question[] = [
   },
   {
     num: 12,
+    paper: "Paper 1",
     topic: "Law",
     text: "For a patient with cholera who has refuse to be quarantined or admitted within a facility and insist on going home the nurse should",
     options: [
@@ -155,6 +170,7 @@ export const questions: Question[] = [
   },
   {
     num: 13,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "In the logarithmic phase of bacteria growth in liquid culture media:-",
     options: [
@@ -169,6 +185,7 @@ export const questions: Question[] = [
   },
   {
     num: 14,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The group development stage where the group would evaluate the product and the lessons learned is: -",
     options: ["Storming", "Norming", "Performing", "Adjourning"],
@@ -178,6 +195,7 @@ export const questions: Question[] = [
   },
   {
     num: 15,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Select the most appropriate statement regarding housing in community health nursing",
     options: [
@@ -192,6 +210,7 @@ export const questions: Question[] = [
   },
   {
     num: 16,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Which of the following describes an “action potential”:-",
     options: [
@@ -206,6 +225,7 @@ export const questions: Question[] = [
   },
   {
     num: 17,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Which antidiabetic agent works best in patient with insulin resistance.",
     options: ["Biguanides", "Dipeptidy peptidase-4 inhibotors", "Thiazolidinediones", "Meglitinides"],
@@ -215,6 +235,7 @@ export const questions: Question[] = [
   },
   {
     num: 18,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "Initial treatment of severe acute malnutrition should involve the following",
     options: [
@@ -229,6 +250,7 @@ export const questions: Question[] = [
   },
   {
     num: 19,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "“I do not want to be nursed by you, please get me a male nurse to continue with the procedure” if a patient says this to a nurse on duty this nurse should",
     options: [
@@ -243,6 +265,7 @@ export const questions: Question[] = [
   },
   {
     num: 20,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Which of the following patient manifest acetaminophen toxicity?",
     options: [
@@ -257,6 +280,7 @@ export const questions: Question[] = [
   },
   {
     num: 21,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "The role of a nurse in social change is",
     options: [
@@ -271,6 +295,7 @@ export const questions: Question[] = [
   },
   {
     num: 22,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The right to emergency care for every human being denotes that",
     options: [
@@ -285,6 +310,7 @@ export const questions: Question[] = [
   },
   {
     num: 23,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "You are educating the community on storage of food. You are aware that the following microorganism can cause spoilage of refrigerated and frozen food:-",
     options: ["Physchophiles", "Mesophiles", "Thermophiles", "Hyperthermophiles"],
@@ -294,6 +320,7 @@ export const questions: Question[] = [
   },
   {
     num: 24,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "A nurse is performing a head-to-toe assessment on a patient. Which of the following findings should the nurse prioritize for further evaluation?",
     options: [
@@ -308,6 +335,7 @@ export const questions: Question[] = [
   },
   {
     num: 25,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Which of the following statements is true of neuroglia:-",
     options: [
@@ -322,6 +350,7 @@ export const questions: Question[] = [
   },
   {
     num: 26,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The four stages that teams typically go through are:",
     options: [
@@ -336,6 +365,7 @@ export const questions: Question[] = [
   },
   {
     num: 27,
+    paper: "Paper 1",
     topic: "Midwifery",
     text: "Implantation of the fertilized ovum takes place within",
     options: ["The first 7 days", "The first 14 days", "In 5 days, period", "After degeneration of the corpus leutem"],
@@ -345,6 +375,7 @@ export const questions: Question[] = [
   },
   {
     num: 28,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "A patient receiving nitroprusside begun manifesting headache, distant heart sound, imperceptible pulses, and shallow breathing. The nurse knows that these are signs of?",
     options: ["Reflex tachycardia", "Hypothyroidism", "Cyanide toxicity", "Severe alteration of blood pressure"],
@@ -354,6 +385,7 @@ export const questions: Question[] = [
   },
   {
     num: 29,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "You are educating mothers on developmental milestones. At what age will you advise them to start giving their babies’ finger foods?",
     options: ["8 months", "12 months", "4 months", "18 months"],
@@ -363,6 +395,7 @@ export const questions: Question[] = [
   },
   {
     num: 30,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Which of the following ethical principle refers to duty not to harm",
     options: ["Beneficence", "Nonmaleneficence", "Fidelity", "Veracity"],
@@ -372,6 +405,7 @@ export const questions: Question[] = [
   },
   {
     num: 31,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Sub-county hospitals are categorized under the following level in the hierarchy of health services",
     options: ["Level I", "Level II", "Level III", "Level IV"],
@@ -381,6 +415,7 @@ export const questions: Question[] = [
   },
   {
     num: 32,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Which of the following actions should a nurse take to use a wide base support when transferring a client to a chair?",
     options: [
@@ -395,6 +430,7 @@ export const questions: Question[] = [
   },
   {
     num: 33,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "The non-motile organisms that live parasitically within the cells of the host are known as:-",
     options: ["Sporozoa", "Ciliata", "Mastigophora", "Rhizopoda"],
@@ -404,6 +440,7 @@ export const questions: Question[] = [
   },
   {
     num: 34,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "The following are the major occupational diseases caused by exposure to allergens",
     options: ["Cancer", "Gastrointestinal diseases", "Respiratory diseases", "Neurological diseases"],
@@ -413,6 +450,7 @@ export const questions: Question[] = [
   },
   {
     num: 35,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "The following is the most effective method of large scale treatment of drinking water",
     options: ["Filtration", "Boiling", "Fluoridation", "Chlorination"],
@@ -422,6 +460,7 @@ export const questions: Question[] = [
   },
   {
     num: 36,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The BEST description of group dynamics is:",
     options: [
@@ -436,6 +475,7 @@ export const questions: Question[] = [
   },
   {
     num: 37,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "What advice would you give to a client receiving theophylline?",
     options: [
@@ -450,6 +490,7 @@ export const questions: Question[] = [
   },
   {
     num: 38,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Communication that takes place within a person is:-",
     options: ["Interpersonal communication", "Inside communication", "Self-conversation", "Intrapersonal communication"],
@@ -459,6 +500,7 @@ export const questions: Question[] = [
   },
   {
     num: 39,
+    paper: "Paper 1",
     topic: "Law",
     text: "“Let me go to tat house, this stupid wife will know me by my names, I will kill that woman” if this statement is made by a client the nurse should",
     options: [
@@ -473,6 +515,7 @@ export const questions: Question[] = [
   },
   {
     num: 40,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "Mechanical ventilation is indicated in which of the following conditions?",
     options: [
@@ -487,6 +530,7 @@ export const questions: Question[] = [
   },
   {
     num: 41,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "In which phase of mitosis do centromeres of chromatid pairs line up at the metaphase plate:-",
     options: ["Telophase", "Anaphase", "Metaphase", "Prophase"],
@@ -496,6 +540,7 @@ export const questions: Question[] = [
   },
   {
     num: 42,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "A pregnant woman needs a lipid lowering agent. What would be best class of lipid-lowering agent for pregnant women?",
     options: [
@@ -510,6 +555,7 @@ export const questions: Question[] = [
   },
   {
     num: 43,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "What is the difference between an exocrine gland and an endocrine gland:-",
     options: [
@@ -524,6 +570,7 @@ export const questions: Question[] = [
   },
   {
     num: 44,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "The most appropriate therapeutic diet for a patient with severe burns is",
     options: ["High calorie diet", "High protein diet", "High calorie high protein diet", "Low salt diet"],
@@ -533,6 +580,7 @@ export const questions: Question[] = [
   },
   {
     num: 45,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "To promote correct anatomic alignment in a supine patient, the nurse should",
     options: [
@@ -547,6 +595,7 @@ export const questions: Question[] = [
   },
   {
     num: 46,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "An example of a mould-like fungi is:-",
     options: ["Candida", "Cryptococcus", "Trichphyton", "Coccidioides"],
@@ -556,6 +605,7 @@ export const questions: Question[] = [
   },
   {
     num: 47,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "The following is a key aspect to consider when assessing the breathing of a pediatric:-",
     options: [
@@ -570,6 +620,7 @@ export const questions: Question[] = [
   },
   {
     num: 48,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "The nurse’s main priority when caring for a client with hemiplegia is?",
     options: [
@@ -584,6 +635,7 @@ export const questions: Question[] = [
   },
   {
     num: 49,
+    paper: "Paper 1",
     topic: "Law",
     text: "A nurse who takes pethidine from the storage alone and injects a patient, then there is a severe reaction due to drug overdose can be charged for",
     options: [
@@ -598,6 +650,7 @@ export const questions: Question[] = [
   },
   {
     num: 50,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "“let me give you some of my chicken and pizza, you are a lovely nurse”, if this is said to a nurse the course of action to be taken should be",
     options: [
@@ -612,6 +665,7 @@ export const questions: Question[] = [
   },
   {
     num: 51,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The following is considered the 5th vital sign",
     options: ["Blood pressure", "Temperature", "Oxygen saturation", "Pain"],
@@ -621,6 +675,7 @@ export const questions: Question[] = [
   },
   {
     num: 52,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "The following statement about HIV transmission is TRUE",
     options: [
@@ -635,6 +690,7 @@ export const questions: Question[] = [
   },
   {
     num: 53,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "In management of a 9 months old baby weighing 9kgs who is having convulsions you will administer:-",
     options: [
@@ -649,6 +705,7 @@ export const questions: Question[] = [
   },
   {
     num: 54,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The method of nutritional assessment wherein the patient documents all foods taken during a one-week period is called",
     options: ["Dietary recall", "Food diary", "Food history", "Dietary survey"],
@@ -658,6 +715,7 @@ export const questions: Question[] = [
   },
   {
     num: 55,
+    paper: "Paper 1",
     topic: "Nutrition",
     text: "Select a true statement regarding energy metabolism",
     options: [
@@ -672,6 +730,7 @@ export const questions: Question[] = [
   },
   {
     num: 56,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "Which one of the following will you pick as a red flag in an 11 months old baby:-",
     options: [
@@ -686,6 +745,7 @@ export const questions: Question[] = [
   },
   {
     num: 57,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Food safety and hygiene in Kenya is regulated by",
     options: ["Nurses Act", "Community Health Act", "Public Health Act", "Food safety and hygiene Act"],
@@ -695,6 +755,7 @@ export const questions: Question[] = [
   },
   {
     num: 58,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Which hormone has the element iodine as part of its molecule:-",
     options: ["Calcitonin", "Haemoglobin", "Thyroxine", "Parathyroid hormone"],
@@ -704,6 +765,7 @@ export const questions: Question[] = [
   },
   {
     num: 59,
+    paper: "Paper 1",
     topic: "Midwifery",
     text: "The division of medicine that deals with abnormal development of the fetus is:-",
     options: ["Embryology", "Pathology", "Teratology", "Microbiology"],
@@ -713,6 +775,7 @@ export const questions: Question[] = [
   },
   {
     num: 60,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "The nurse is providing wound care to a patient with a Stage II pressure injury. Which of the following wound descriptions is consistent with this classification?",
     options: [
@@ -727,6 +790,7 @@ export const questions: Question[] = [
   },
   {
     num: 61,
+    paper: "Paper 1",
     topic: "Law",
     text: "If a nurse is faced with a situation where a patient requires an urgent surgery yet upon calling the doctor, he is not able to attend to the patient, the nurse decides to ahead and save the patients life. This scenario could be interpreted as",
     options: ["Lack of professionalism", "Malpractice", "Patient negligence", "Act of good faith"],
@@ -736,6 +800,7 @@ export const questions: Question[] = [
   },
   {
     num: 62,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "What is the primary function of the cerebellum:-",
     options: [
@@ -750,6 +815,7 @@ export const questions: Question[] = [
   },
   {
     num: 63,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "A patient with a wound infection is prescribed an antibiotic. Which of the following statements by the patient demonstrates correct understanding of antibiotic therapy?",
     options: [
@@ -764,6 +830,7 @@ export const questions: Question[] = [
   },
   {
     num: 64,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "A principle of growth and development is:-",
     options: [
@@ -778,6 +845,7 @@ export const questions: Question[] = [
   },
   {
     num: 65,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "Facultative anaerobes:-",
     options: [
@@ -792,6 +860,7 @@ export const questions: Question[] = [
   },
   {
     num: 66,
+    paper: "Paper 1",
     topic: "Nutrition",
     text: "The quality of proteins is determined by",
     options: [
@@ -806,6 +875,7 @@ export const questions: Question[] = [
   },
   {
     num: 67,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The ability of a person to ignore all the things present in a different culture and lender the useless is a good example of",
     options: ["Cultural relativism", "Ethnocentrism", "Cultural differences", "tribalism"],
@@ -815,6 +885,7 @@ export const questions: Question[] = [
   },
   {
     num: 68,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "If a nurse shows to the clinical area with bright colored hair, painted long nails and a mini- skirt. Which of the following is this nurse missing",
     options: [
@@ -829,6 +900,7 @@ export const questions: Question[] = [
   },
   {
     num: 69,
+    paper: "Paper 1",
     topic: "Nutrition",
     text: "The following statement regarding parenteral nutrition is true",
     options: [
@@ -843,6 +915,7 @@ export const questions: Question[] = [
   },
   {
     num: 70,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "The body of nursing that is responsible for enhancing international nurses’ partnership and relations within Kenya is",
     options: [
@@ -857,6 +930,7 @@ export const questions: Question[] = [
   },
   {
     num: 71,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "For a child who has attained 7 months of age and still not able to sit the best course of action would be",
     options: [
@@ -871,6 +945,7 @@ export const questions: Question[] = [
   },
   {
     num: 72,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Fluorine is a common cause of teeth damage in children because",
     options: [
@@ -885,6 +960,7 @@ export const questions: Question[] = [
   },
   {
     num: 73,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "The following is true about mitosis:-",
     options: [
@@ -899,6 +975,7 @@ export const questions: Question[] = [
   },
   {
     num: 74,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Where is the autonomic control centre for most of body homeostasis located:-",
     options: ["In the limbic system", "In the brainstem", "In the hypothalamus", "In the cerebellum"],
@@ -908,6 +985,7 @@ export const questions: Question[] = [
   },
   {
     num: 75,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Refrigeration preserves food by",
     options: [
@@ -922,6 +1000,7 @@ export const questions: Question[] = [
   },
   {
     num: 76,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "Bacteria can be classified in accordance to their shape. Cocci shaped bacteria:",
     options: ["Have twisted rod-shaped cells", "Are curved", "Are relatively straight", "Are spherical"],
@@ -931,6 +1010,7 @@ export const questions: Question[] = [
   },
   {
     num: 77,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "A nurse is teaching a client on the use of a respiratory inhaler. Which action by the client indicates a need for further teaching.",
     options: [
@@ -945,6 +1025,7 @@ export const questions: Question[] = [
   },
   {
     num: 78,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "A person has AIDS when which of these occurs?",
     options: [
@@ -959,6 +1040,7 @@ export const questions: Question[] = [
   },
   {
     num: 79,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Blood pressure measurement is an important part of the patient’s database. It is considered to be?",
     options: ["The basis for the nursing diagnosis", "Subjective data", "Objective data", "An indicator of patient’s wellbeing"],
@@ -968,6 +1050,7 @@ export const questions: Question[] = [
   },
   {
     num: 80,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Mrs. Smith, a 40-year-old known asthmatic client is admitted due to hypertensive episode. Which of the following drugs would be safest to give?",
     options: ["Nebivolol", "Timolol", "Propranolol", "Atenolol"],
@@ -977,6 +1060,7 @@ export const questions: Question[] = [
   },
   {
     num: 81,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Select the most appropriate statement about family health nursing",
     options: [
@@ -991,6 +1075,7 @@ export const questions: Question[] = [
   },
   {
     num: 82,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "A nurse is documenting a patient's wound dressing change. Which of the following components must be included in the wound care documentation?",
     options: [
@@ -1005,6 +1090,7 @@ export const questions: Question[] = [
   },
   {
     num: 83,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "When a counselor listens and is keen to pick nonverbal communication of the client he is:",
     options: ["Empathetic", "Honest", "Non-judgmental", "Observant"],
@@ -1014,6 +1100,7 @@ export const questions: Question[] = [
   },
   {
     num: 84,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Which of the following substances would alert the nurse for an increased risk of bleeding for a patient taking clopidogrel?",
     options: ["Chamomile tea", "Orange juice", "Candied mushrooms", "Peanuts"],
@@ -1023,6 +1110,7 @@ export const questions: Question[] = [
   },
   {
     num: 85,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "Opportunistic infections should be first treated before initiation of antiretroviral therapy because",
     options: [
@@ -1037,6 +1125,7 @@ export const questions: Question[] = [
   },
   {
     num: 86,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Using Maslow’s hierarchy of needs, the nurse assigns priority to which client need?",
     options: ["Elimination", "Security", "Safety", "belonging"],
@@ -1046,6 +1135,7 @@ export const questions: Question[] = [
   },
   {
     num: 87,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "What effect does aldosterone hormone have in the body:-",
     options: [
@@ -1060,6 +1150,7 @@ export const questions: Question[] = [
   },
   {
     num: 88,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "Which of the following substances CANNOT pass through the “blood-brain barrier”:-",
     options: ["steroid hormones", "O 2 molecules", "Alcohol", "potassium ions"],
@@ -1069,6 +1160,7 @@ export const questions: Question[] = [
   },
   {
     num: 89,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "The main goal of home based care in management of nutrition needs is to",
     options: [
@@ -1083,6 +1175,7 @@ export const questions: Question[] = [
   },
   {
     num: 90,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "You are assessing a 3 months old baby. You expect that:-",
     options: [
@@ -1097,6 +1190,7 @@ export const questions: Question[] = [
   },
   {
     num: 91,
+    paper: "Paper 1",
     topic: "Microbiology",
     text: "Which of the following microorganisms are flagellates:-",
     options: [
@@ -1111,6 +1205,7 @@ export const questions: Question[] = [
   },
   {
     num: 92,
+    paper: "Paper 1",
     topic: "Nutrition",
     text: "A patient suffering liver disease should take the following type of diet",
     options: [
@@ -1125,6 +1220,7 @@ export const questions: Question[] = [
   },
   {
     num: 93,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Select the statement that BEST describes health",
     options: [
@@ -1139,6 +1235,7 @@ export const questions: Question[] = [
   },
   {
     num: 94,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "The following health management function is performed by the county government",
     options: [
@@ -1153,6 +1250,7 @@ export const questions: Question[] = [
   },
   {
     num: 95,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "What effect does parathyroid hormone have:-",
     options: [
@@ -1167,6 +1265,7 @@ export const questions: Question[] = [
   },
   {
     num: 96,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "One of the following is classified as a fundamental role of a nurse",
     options: ["To promote health", "To enhance equity", "To educate patients", "To build confidence"],
@@ -1176,6 +1275,7 @@ export const questions: Question[] = [
   },
   {
     num: 97,
+    paper: "Paper 1",
     topic: "Community Health",
     text: "Canning of processed food preserves food over a long period of time because",
     options: [
@@ -1190,6 +1290,7 @@ export const questions: Question[] = [
   },
   {
     num: 98,
+    paper: "Paper 1",
     topic: "Anatomy",
     text: "What is the gap between the plasma membranes of a neuron that conducts an incoming signal and the cell that is going to receive the signal :-",
     options: ["Neuromuscular junction", "Intercellular cleft", "Synaptic cleft", "Intercalated disc"],
@@ -1199,6 +1300,7 @@ export const questions: Question[] = [
   },
   {
     num: 99,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "Counselor agrees with the client on the number of counseling sessions to be held during",
     options: ["Social stage", "Problem exploration stage", "Interaction stage", "Goal setting stage"],
@@ -1208,6 +1310,7 @@ export const questions: Question[] = [
   },
   {
     num: 100,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "When administering methyl xanthine theophylline, the nurse can expect?",
     options: [
@@ -1222,6 +1325,7 @@ export const questions: Question[] = [
   },
   {
     num: 101,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "“I do not understand what you are explaining to me, it seems my English requires a little sharpening” if this statement comes from a patient the nurse should",
     options: [
@@ -1236,6 +1340,7 @@ export const questions: Question[] = [
   },
   {
     num: 102,
+    paper: "Paper 1",
     topic: "Pharmacology",
     text: "Antiretroviral therapy affects clinical progression of HIV by: -",
     options: [
@@ -1250,6 +1355,7 @@ export const questions: Question[] = [
   },
   {
     num: 103,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "A nurse is assisting an older adult patient with bathing. Which of the following actions should the nurse prioritize to promote patient safety?",
     options: [
@@ -1264,6 +1370,7 @@ export const questions: Question[] = [
   },
   {
     num: 104,
+    paper: "Paper 1",
     topic: "Medical-Surgical",
     text: "All adolescents and adults should be started on antiretroviral therapy when:-",
     options: [
@@ -1278,6 +1385,7 @@ export const questions: Question[] = [
   },
   {
     num: 105,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "the law of learning was first developed by",
     options: ["Edward Thorndike", "S. bandura", "Ivan Pavlov", "Ibrahim Maslow"],
@@ -1287,6 +1395,7 @@ export const questions: Question[] = [
   },
   {
     num: 106,
+    paper: "Paper 1",
     topic: "Law",
     text: "Which of the following is considered a patient’s right?",
     options: [
@@ -1301,6 +1410,7 @@ export const questions: Question[] = [
   },
   {
     num: 107,
+    paper: "Paper 1",
     topic: "Fundamentals",
     text: "social mobility denotes",
     options: [
@@ -1315,6 +1425,7 @@ export const questions: Question[] = [
   },
   {
     num: 108,
+    paper: "Paper 1",
     topic: "Paediatric",
     text: "An infant who is receiving a cardiac glycoside has an apical pulse of 80b/min. which is the best nursing intervention for this assessment finding?",
     options: [
@@ -1328,3 +1439,5 @@ export const questions: Question[] = [
     memory: "Infant HR < 90 = Hold Digoxin."
   }
 ];
+
+export const questions: Question[] = [...paper1Questions, ...paper2_1];
