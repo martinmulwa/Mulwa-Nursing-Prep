@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { CheckCircle2, XCircle, BookOpen, RefreshCw, BookX, GraduationCap, Filter } from 'lucide-react';
+import { CheckCircle2, XCircle, BookOpen, RefreshCw, BookX, GraduationCap, Filter, Stethoscope, ShieldCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { questions } from '@/lib/questions';
 
@@ -100,12 +100,22 @@ export default function QuizApp() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-[#0f1117] text-[#faf8f3] border-b-[3px] border-[#c8392b] shadow-md">
         <div className="max-w-4xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="bg-[#c8392b] p-2 rounded-lg">
-              <GraduationCap className="w-6 h-6 text-white" />
+          <div className="flex items-center gap-3 group cursor-pointer">
+            <div className="relative">
+              <div className="bg-[#c8392b] p-2.5 rounded-xl shadow-lg shadow-[#c8392b]/20 transform group-hover:scale-110 transition-transform duration-300">
+                <Stethoscope className="w-6 h-6 text-white" />
+              </div>
+              <div className="absolute -top-1 -right-1 bg-white p-0.5 rounded-full shadow-sm">
+                <ShieldCheck className="w-3 h-3 text-[#c8392b]" />
+              </div>
             </div>
-            <div className="font-serif text-2xl font-bold tracking-tight">
-              MULWA <span className="text-[#c8392b] font-light">PREP</span>
+            <div className="flex flex-col">
+              <div className="font-serif text-2xl font-black tracking-tighter leading-none flex items-baseline gap-1">
+                MULWA <span className="text-[#c8392b] font-light">PREP</span>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 leading-none mt-1">
+                Nursing Excellence
+              </div>
             </div>
           </div>
           <div className="flex items-center gap-3 w-full sm:w-auto flex-1 max-w-[340px]">

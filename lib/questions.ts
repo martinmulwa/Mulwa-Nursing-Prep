@@ -1,4 +1,5 @@
 import { paper2_1 } from './paper2_1';
+import { paper3_1 } from './paper3_1';
 
 export interface Question {
   num: number;
@@ -1440,4 +1441,4 @@ const paper1Questions: Question[] = [
   }
 ];
 
-export const questions: Question[] = [...paper1Questions, ...paper2_1];
+export const questions: Question[] = [...paper1Questions, ...paper2_1, ...paper3_1];

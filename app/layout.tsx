@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css'; // Global styles
 
 export const metadata: Metadata = {
-  title: 'Mulwa Nursing Prep',
+  title: 'Mulwa Prep',
   description: 'End of Year 1 Revision Questions',
 };
 
